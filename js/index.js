@@ -413,7 +413,12 @@ function buildAudioProxyUrl(url) {
 const SOURCE_OPTIONS = [
     { value: "netease", label: "网易云音乐" },
     { value: "kuwo", label: "酷我音乐" },
-    { value: "joox", label: "JOOX音乐" }
+    { value: "joox", label: "JOOX音乐" },
+    { value: "tidal", label: "Tidal" },
+    { value: "quboz", label: "Quboz" },
+    { value: "apple", label: "苹果" },
+    { value: "spotify", label: "Spotify" },
+    { value: "tencent", label: "QQ" }
 ];
 
 function normalizeSource(value) {
