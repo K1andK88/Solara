@@ -42,9 +42,9 @@
 - 🎚️ 默认主题、播放模式等偏好可在 `state` 初始化逻辑中按需调整。
 
 ## 🔐 访问控制设置
-- 在 Cloudflare Pages 项目的 **Settings → Functions → Environment variables** 中新增名为 `PASSWORD` 的环境变量，值为希望设置的访问口令。
+- 在 Cloudflare Pages 项目的 **Settings → Variables and Secrets → +Add** 中新增**Type**选择`Secret`，**Variable name**填写`PASSWORD`，值（Value）为希望设置的访问口令。
 - 变量保存后重新部署站点，未登录的访问者会被自动重定向到 `/login` 页面并需输入该口令。
-- 若后续想关闭访问口令，只需在同一位置删除 `PASSWORD` 环境变量并重新部署。
+- 若后续想关闭访问口令，只需删除 `PASSWORD` 并重新部署。
 ## 🎵 使用流程
 1. 输入关键词并选择想要的曲库后发起搜索。
 2. 在结果列表中可试听、播放、下载或加入播放队列。
